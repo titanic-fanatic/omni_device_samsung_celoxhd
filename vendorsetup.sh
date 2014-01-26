@@ -1,2 +1,2 @@
-add_lunch_combo cm_celoxhd-eng
+add_lunch_combo omni_celoxhd-eng
 
