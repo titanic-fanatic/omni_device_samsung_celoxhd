@@ -21,19 +21,7 @@
 # lines, full and maguro, hence its name.
 #
 
-# Get the long list of APNs
-PRODUCT_COPY_FILES := device/sample/etc/apns-full-conf.xml:system/etc/apns-conf.xml
-
-# Inherit from the common Open Source product configuration
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+$(call inherit-product, device/samsung/celoxhd/full_celoxhd.mk)
 
 # Set those variables here to overwrite the inherited values.
-PRODUCT_NAME := full_celoxhd
-PRODUCT_DEVICE := celoxhd
-PRODUCT_BRAND := samsung
-PRODUCT_MANUFACTURER := samsung
-PRODUCT_MODEL := SGH-I757M
-
-# Inherit from hardware-specific part of the product configuration
-$(call inherit-product, device/samsung/celoxhd/device.mk)
-$(call inherit-product-if-exists, vendor/samsung/celoxhd/mako-vendor.mk)
+PRODUCT_NAME := aosp_celoxhd
