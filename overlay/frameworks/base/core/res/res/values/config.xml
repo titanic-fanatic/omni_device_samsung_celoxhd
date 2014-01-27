@@ -76,7 +76,4 @@
 
     <!-- Minimum screen brightness allowed by the power manager. -->
     <integer name="config_screenBrightnessDim">20</integer>
-    
-    <!-- Device supports LED flashlight -->
-    <bool name="config_enableTorch">true</bool>
 </resources>
